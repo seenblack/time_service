@@ -47,12 +47,12 @@ GET	/news/{news_id}	Получить детали одной новости по
 
 Примеры использования (curl)
 
-curl -X POST http://localhost:8000/feeds \
-     -H "Content-Type: application/json" \
+curl -X POST http://localhost:8000/feeds ^
+     -H "Content-Type: application/json" ^
      -d '{"url":"https://example.com/rss"}'
 
-curl -X POST http://localhost:8000/keywords \
-     -H "Content-Type: application/json" \
+curl -X POST http://localhost:8000/keywords ^
+     -H "Content-Type: application/json" ^
      -d '{"keyword":"bitcoin"}'
 
 curl http://localhost:8000/news
