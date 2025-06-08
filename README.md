@@ -46,6 +46,7 @@ GET	/news	Список всех найденных новостей (фильт�
 GET	/news/{news_id}	Получить детали одной новости по ID
 
 Примеры использования (curl)
+
 curl -X POST http://localhost:8000/feeds \
      -H "Content-Type: application/json" \
      -d '{"url":"https://example.com/rss"}'
